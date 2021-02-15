@@ -1,0 +1,26 @@
+Descripcion del Problema
+
+La empresa de Seguros TK-U quiere que se calcule los cargos extras para el individuo
+en base a su edad, estado civil y cantidad de hijos
+
+Lo que necestiamos
+
+- edad de la persona
+- si es casado
+- si tiene hijos 
+
+Logica
+
+Hay rangos de edad para la persona primaria (quien solicita), y rangos de edad para el conyuge (si tuviera)
+y se le agrega otro porcentaje en base a la cantidad de hijos (si tuviera)
+Los rangos de edades son los mismos para el primario y su conyuge
+Toda cotizacion tiene un base de 2000
+
+personas de 0 a 17, no se puede proceder
+de 18 a 24, se recarga un 10%
+de 25 a 49, se recarga un 20%
+y de 50 o mas, se recarga 30%
+
+por cada hijo, se recarga 20%
+
+Al final, debe mostrar la cantidad de recargo, y luego el Total (que incluye el base de 2000)

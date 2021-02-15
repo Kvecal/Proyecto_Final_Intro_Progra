@@ -1,0 +1,42 @@
+Algoritmo
+Asegurar Individiuo con precio base de 2000 y calcular cargos extras obligatorios en base a edad, 
+estado civil y cantidad de hijos. Tambien calcular otros cargos extras en base a
+propiedades y salario.
+
+1. Ingresar Nombre
+2. Ingresar Edad
+	a. Si es menor o igual a 17, no se puede proceder
+	b. Si esta entre 18 a 24, agregar un 10% segun precio base
+	c. Si esta entre 25 a 49, agregar un 20% segun precio base
+	d. Si es 50 o mayor, agregar un 30% segun precio base
+
+3. Preguntar si la persona es casada
+	a. Si es afirmativo, pasar a pregunta de la edad del conyuge
+		1. Si es menor o igual a 17, no deberia, segun la ley
+		2. Si es entre 18 a 24, agregar otro 10% segun precio base
+		3. Si es entre 25 a 49, agregar otro 20% segun precio base
+		4. Si es 50 o mayor, agregar otro 30% segun precio base
+	
+	b. Si es negativo, pasar a siguiente pregunta
+
+4. Preguntar si la persona tiene hijos
+	a. Si es afirmativo, que el individuo indique la cantidad de hijos
+		1. Segun la cantidad indicada, se multiplica por el 20% del precio base y se agrega al subtotal
+	b. Si es negativo, pasar a la siguiente pregunta
+
+EXTRAS
+--------------------------------------------------------------------------------------------------------
+5. Preguntar si la persona quiere incluir en la cotizacion, sus propiedades
+	a. Si es afirmativo, que el individuo indique la cantidad de propiedades
+		2. Segun la cantidad indicada, se multiplica por el 35% del precio base y se agrega al subtotal
+	b. Si es negativos, pasar a la siguiente pregunta
+
+6. Preguntar si la persona quiere incluir en la cotizacion, su salario
+	a. Si es afirmativo, se agrega otro 5% segun precio base
+	b. Si es negativo, pasar a la siguiente parte
+----------------------------------------------------------------------------------------------------------
+
+7. Finalizamos el calculo
+8. Se indica el nombre del individuo
+9. Se muestra el subtotal (recargos)
+10. Se muestra el total (que ya incluye los 2000)
